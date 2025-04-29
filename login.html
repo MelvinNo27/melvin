@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Natural Healing</title>
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="login-card">
+    <h2 class="card-title">Login</h2>
+
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="loginEmail">Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="loginPassword">Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" required />
+      </div>
+
+      <button type="submit" class="login-btn">Login</button>
+      <p class="switch-text">Don't have an account? <a href="register.html">Register here</a></p>
+    </form>
+  </div>
+</div>
+
+<script>
+
+  function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+      let date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + encodeURIComponent(value || "") + expires + "; path=/; SameSite=Strict";
+  }
+
+
+  function getCookie(name) {
+    let match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
+    return match ? decodeURIComponent(match[2]) : null;
+  }
+
+
+  document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let inputEmail = document.getElementById('loginEmail').value.trim();
+    let inputPassword = document.getElementById('loginPassword').value;
+
+    let savedEmail = getCookie('email');
+    let savedPassword = getCookie('password');
+    let savedUsername = getCookie('username');
+
+    if (!savedEmail || !savedPassword) {
+      alert('No account found. Please register first.');
+      return;
+    }
+
+    if (inputEmail === savedEmail && inputPassword === savedPassword) {
+      setCookie('loggedIn', 'true', 7);
+      setCookie('currentUser', savedUsername, 7);
+      alert('Login successful! Redirecting...');
+      window.location.href = 'home.html';
+    } else {
+      alert('Incorrect email or password.');
+    }
+  });
+</script>
+
+</body>
+</html>

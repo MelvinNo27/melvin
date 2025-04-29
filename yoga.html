@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yoga - Natural Healing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4fdf6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2f6d55;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #23513e;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #1c3f30;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #23513e;
+            min-width: 200px;
+            z-index: 1;
+            top: 100%;
+        }
+
+        .dropdown-content li a {
+            padding: 10px 16px;
+            display: block;
+            color: white;
+            text-align: left;
+        }
+
+        .dropdown-content li a:hover {
+            background-color: #1c3f30;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero {
+            background: url("images/yoga-banner.jpg") center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #2f6d55;
+            font-size: 1.8rem;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #2f6d55;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .dropdown-content {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Yoga</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="objectives.html">Objectives</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Therapies ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="herbalism.html">Herbalism</a></li>
+                        <li><a href="acupuncture.html">Acupuncture</a></li>
+                        <li><a href="massage.html">Massage</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="aromatherapy.html">Aromatherapy</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="detox.html">Detox</a></li>
+                        <li><a href="energy-healing.html">Energy Healing</a></li>
+                        <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Embrace the Healing Power of Yoga</h2>
+    </div>
+
+    <main>
+        <section>
+            <h2>What is Yoga?</h2>
+            <p>Yoga is an ancient practice that combines physical postures, breathing exercises, meditation, and mindfulness to promote overall health and well-being. It is rooted in Indian philosophy and has been practiced for thousands of years.</p>
+        </section>
+
+        <section>
+            <h2>Benefits of Yoga</h2>
+            <ul>
+                <li>Improves flexibility and balance</li>
+                <li>Increases strength and stamina</li>
+                <li>Reduces stress and anxiety</li>
+                <li>Enhances focus and mental clarity</li>
+                <li>Promotes better posture and alignment</li>
+                <li>Supports emotional stability and self-awareness</li>
+                <li>Boosts the immune system</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Different Types of Yoga</h2>
+            <ul>
+                <li><strong>Hatha Yoga:</strong> A gentle introduction to yoga, focusing on basic postures and breath control.</li>
+                <li><strong>Vinyasa Yoga:</strong> A flow-based style linking breath with movement, offering a dynamic practice.</li>
+                <li><strong>Ashtanga Yoga:</strong> A rigorous style with a set sequence of postures performed at a fast pace.</li>
+                <li><strong>Kundalini Yoga:</strong> Focuses on awakening energy through specific postures, breathing, and chanting.</li>
+                <li><strong>Iyengar Yoga:</strong> Emphasizes precision in alignment and the use of props like blocks and straps.</li>
+                <li><strong>Yin Yoga:</strong> A slower practice that targets the connective tissues and promotes deep relaxation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How to Incorporate Yoga into Your Life</h2>
+            <ul>
+                <li>Start with beginner classes or online tutorials to understand the basics.</li>
+                <li>Make yoga a part of your daily routine, even if it's just for 10-15 minutes.</li>
+                <li>Choose a style of yoga that resonates with your goals (e.g., relaxation, flexibility, strength).</li>
+                <li>Focus on your breath, as it is key to deepening your practice.</li>
+                <li>Listen to your body and practice mindfulness to prevent injury and enhance benefits.</li>
+                <li>Join a local yoga studio or community for support and motivation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Safety and Considerations</h2>
+            <p>Yoga is generally safe for most individuals, but if you have any medical conditions or injuries, it’s important to consult a healthcare provider before starting. Avoid pushing yourself too hard, and always practice in a way that feels comfortable for your body.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Natural Healing Project</p>
+    </footer>
+</body>
+</html>

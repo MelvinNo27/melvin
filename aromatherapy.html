@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aromatherapy - Natural Healing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4fdf6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2f6d55;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #23513e;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #1c3f30;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #23513e;
+            min-width: 200px;
+            z-index: 1;
+            top: 100%;
+        }
+
+        .dropdown-content li a {
+            padding: 10px 16px;
+            display: block;
+            color: white;
+            text-align: left;
+        }
+
+        .dropdown-content li a:hover {
+            background-color: #1c3f30;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero {
+            background: url("images/aromatherapy-banner.jpg") center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #2f6d55;
+            font-size: 1.8rem;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #2f6d55;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .dropdown-content {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aromatherapy</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="objectives.html">Objectives</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Therapies ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="herbalism.html">Herbalism</a></li>
+                        <li><a href="acupuncture.html">Acupuncture</a></li>
+                        <li><a href="massage.html">Massage</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="aromatherapy.html">Aromatherapy</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="detox.html">Detox</a></li>
+                        <li><a href="energy-healing.html">Energy Healing</a></li>
+                        <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
+                    </ul>
+                </li>
+
+
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Discover the Therapeutic Power of Aromatherapy</h2>
+    </div>
+
+    <main>
+        <section>
+            <h2>What is Aromatherapy?</h2>
+            <p>Aromatherapy is a holistic healing treatment that uses essential oils extracted from plants to improve physical, emotional, and mental well-being. These oils are typically inhaled, applied to the skin, or used in diffusers.</p>
+        </section>
+
+        <section>
+            <h2>Benefits of Aromatherapy</h2>
+            <ul>
+                <li>Reduces stress, anxiety, and depression</li>
+                <li>Improves sleep quality</li>
+                <li>Boosts mood and promotes relaxation</li>
+                <li>Supports skin health when used in skincare</li>
+                <li>Enhances cognitive function and memory</li>
+                <li>Relieves pain and headaches</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Common Essential Oils and Their Uses</h2>
+            <ul>
+                <li><strong>Lavender:</strong> Known for its calming and relaxing properties, it helps reduce stress and promote sleep.</li>
+                <li><strong>Peppermint:</strong> Energizing and refreshing, it can help relieve headaches, improve digestion, and increase alertness.</li>
+                <li><strong>Eucalyptus:</strong> A natural antiseptic, it’s commonly used to clear respiratory issues and relieve muscle pain.</li>
+                <li><strong>Tea Tree:</strong> Often used for its antibacterial and antifungal properties, it’s great for skincare and immune support.</li>
+                <li><strong>Lemon:</strong> Uplifting and refreshing, it helps with mental clarity and can help boost energy levels.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How to Use Aromatherapy</h2>
+            <ul>
+                <li><strong>Diffusers:</strong> Essential oils can be added to a diffuser to fill a room with their therapeutic aroma, promoting relaxation or energy.</li>
+                <li><strong>Topical Application:</strong> Mix essential oils with a carrier oil (e.g., coconut, jojoba) and apply to the skin for local benefits like pain relief or skin rejuvenation.</li>
+                <li><strong>Inhalation:</strong> You can inhale essential oils directly from the bottle or use them in steam inhalations for respiratory support.</li>
+                <li><strong>Baths:</strong> Add essential oils to a warm bath for a relaxing and soothing experience.</li>
+                <li><strong>Massage:</strong> Blend essential oils with massage oils to enhance the benefits during a massage session.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Safety and Considerations</h2>
+            <p>While aromatherapy is generally safe, essential oils should be used with care. Always dilute oils before applying them to the skin, as some can cause irritation. It is also important to do a patch test before using any oil on a larger area of the body. Pregnant women, children, and people with certain health conditions should consult a healthcare provider before using essential oils.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Natural Healing Project</p>
+    </footer>
+</body>
+</html>

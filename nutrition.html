@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nutrition - Natural Healing</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4fdf6;
+            color: #333;
+        }
+
+        header {
+            background-color: #2f6d55;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #23513e;
+        }
+
+        nav ul li {
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            background-color: #1c3f30;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #23513e;
+            min-width: 200px;
+            z-index: 1;
+            top: 100%;
+        }
+
+        .dropdown-content li a {
+            padding: 10px 16px;
+            display: block;
+            color: white;
+            text-align: left;
+        }
+
+        .dropdown-content li a:hover {
+            background-color: #1c3f30;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .hero {
+            background: url("images/nutrition-banner.jpg") center/cover no-repeat;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #2f6d55;
+            font-size: 1.8rem;
+        }
+
+        section p, section ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #2f6d55;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .dropdown-content {
+                position: static;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nutrition</h1>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="objectives.html">Objectives</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Therapies ▾</a>
+                    <ul class="dropdown-content">
+                        <li><a href="herbalism.html">Herbalism</a></li>
+                        <li><a href="acupuncture.html">Acupuncture</a></li>
+                        <li><a href="massage.html">Massage</a></li>
+                        <li><a href="meditation.html">Meditation</a></li>
+                        <li><a href="yoga.html">Yoga</a></li>
+                        <li><a href="aromatherapy.html">Aromatherapy</a></li>
+                        <li><a href="nutrition.html">Nutrition</a></li>
+                        <li><a href="detox.html">Detox</a></li>
+                        <li><a href="energy-healing.html">Energy Healing</a></li>
+                        <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
+                    </ul>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Nutrition for a Healthy Lifestyle</h2>
+    </div>
+
+    <main>
+        <section>
+            <h2>What is Nutrition?</h2>
+            <p>Nutrition is the process by which our bodies take in and use food for growth, energy, and health. It involves consuming the right balance of macronutrients (proteins, fats, carbohydrates) and micronutrients (vitamins, minerals) to maintain optimal health and well-being.</p>
+        </section>
+
+        <section>
+            <h2>Benefits of Proper Nutrition</h2>
+            <ul>
+                <li>Boosts immune system function</li>
+                <li>Promotes healthy growth and development</li>
+                <li>Improves brain function and mental health</li>
+                <li>Supports energy production and stamina</li>
+                <li>Helps maintain a healthy weight</li>
+                <li>Prevents chronic diseases like heart disease, diabetes, and certain cancers</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Essential Nutrients for a Healthy Diet</h2>
+            <ul>
+                <li><strong>Proteins:</strong> Building blocks of the body that are crucial for muscle repair, immune function, and overall growth. Examples: meat, fish, eggs, beans, and legumes.</li>
+                <li><strong>Carbohydrates:</strong> The primary energy source for the body. They are found in fruits, vegetables, grains, and legumes.</li>
+                <li><strong>Fats:</strong> Essential for brain health, hormone production, and energy storage. Healthy fats are found in avocados, nuts, seeds, and fatty fish.</li>
+                <li><strong>Vitamins:</strong> Help regulate body processes and support immune function. Examples include Vitamin C (immune health), Vitamin D (bone health), and Vitamin A (vision health).</li>
+                <li><strong>Minerals:</strong> Important for bone health, fluid balance, and muscle function. Examples include calcium, potassium, and iron.</li>
+                <li><strong>Fiber:</strong> Aids digestion, helps maintain healthy blood sugar levels, and supports heart health. Found in whole grains, fruits, and vegetables.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How to Maintain a Healthy Diet</h2>
+            <ul>
+                <li><strong>Eat a variety of foods:</strong> Include a wide range of fruits, vegetables, whole grains, lean proteins, and healthy fats.</li>
+                <li><strong>Portion control:</strong> Be mindful of portion sizes to avoid overeating, especially with high-calorie foods.</li>
+                <li><strong>Stay hydrated:</strong> Drink plenty of water throughout the day to stay hydrated and support overall health.</li>
+                <li><strong>Limit processed foods:</strong> Try to avoid excessive amounts of sugar, refined grains, and unhealthy fats.</li>
+                <li><strong>Regular meals:</strong> Have regular meals and snacks throughout the day to keep energy levels stable.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Special Considerations</h2>
+            <p>Each individual’s nutritional needs may vary based on age, activity level, health status, and personal goals. It’s important to tailor your diet to your unique needs and consult with a healthcare provider or registered dietitian for personalized advice.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Natural Healing Project</p>
+    </footer>
+</body>
+</html>
