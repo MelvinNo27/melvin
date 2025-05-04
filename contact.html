@@ -19,7 +19,7 @@
         <li><a href="about.html">About</a></li>
 
         <li class="dropdown">
-          <a href="#">Therapies ▾</a>
+          <a href="#">Alternative Medicines ▾</a>
           <ul class="dropdown-content">
             <li><a href="herbalism.html">Herbalism</a></li>
             <li><a href="acupuncture.html">Acupuncture</a></li>
@@ -27,6 +27,12 @@
             <li><a href="meditation.html">Meditation</a></li>
             <li><a href="yoga.html">Yoga</a></li>
             <li><a href="aromatherapy.html">Aromatherapy</a></li>
+            <li><a href="homeopathy.html">Homeopathy</a></li>
+            <li><a href="chiropractic.html">Chiropractic</a></li>
+            <li><a href="tai_chi.html">Tai Chi</a></li>
+            <li><a href="ayurveda.html">Ayurveda</a></li>
+            <li><a href="sound_therapy.html">Sound Therapy</a></li>
+            <li><a href="flower_essences.html">Flower Essences</a></li>
             <li><a href="nutrition.html">Nutrition</a></li>
             <li><a href="detox.html">Detox</a></li>
             <li><a href="energy-healing.html">Energy Healing</a></li>
@@ -39,9 +45,10 @@
         <li class="dropdown user-dropdown">
           <a href="#">
             <img src="image/avatar.png" alt="User Avatar" class="avatar">
-            <span class="username">Melvin Magsalay</span>▾
+            <span class="username" id="navbarUsername">User</span>▾
           </a>
           <ul class="dropdown-content">
+            <li><a href="profile.html">View Profile</a></li>
             <li><a href="#" onclick="logout()">Logout</a></li>
           </ul>              
         </li>
@@ -85,32 +92,57 @@
   </main>
   <footer>
     <div class="footer-container">
+    
       <div class="footer-logo">
-        <img src="image/logo.png" alt="Natural Healing Logo">
+        <img src="image/logo.png" alt="Logo">
         <p>Natural Healing</p>
       </div>
   
-      <div class="footer-nav">
-        <h4>Navigation</h4>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
         <ul>
-          <li><a href="Home.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="objectives.html">Objectives</a></li>
-          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
   
-      <div class="footer-therapies">
-        <h4>Therapies</h4>
-        <ul>
-          <li><a href="herbalism.html">Herbalism</a></li>
-          <li><a href="acupuncture.html">Acupuncture</a></li>
-          <li><a href="massage.html">Massage</a></li>
-          <li><a href="meditation.html">Meditation</a></li>
-          <li><a href="yoga.html">Yoga</a></li>
-        </ul>
+      <div class="footer-section">
+        <h4>Alternative Medicines</h4>
+        <div class="therapy-columns">
+          <ul>
+            <li><a href="herbalism.html">Herbalism</a></li>
+            <li><a href="acupuncture.html">Acupuncture</a></li>
+            <li><a href="massage.html">Massage</a></li>
+            <li><a href="meditation.html">Meditation</a></li>
+            <li><a href="yoga.html">Yoga</a></li>
+            <li><a href="aromatherapy.html">Aromatherapy</a></li>
+            <li><a href="homeopathy.html">Homeopathy</a></li>
+            <li><a href="chiropractic.html">Chiropractic</a></li>
+          </ul>
+          <ul>
+            <li><a href="tai_chi.html">Tai Chi</a></li>
+            <li><a href="ayurveda.html">Ayurveda</a></li>
+            <li><a href="sound_therapy.html">Sound Therapy</a></li>
+            <li><a href="flower_essences.html">Flower Essences</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="detox.html">Detox</a></li>
+            <li><a href="energy-healing.html">Energy Healing</a></li>
+            <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
+          </ul>
+        </div>
       </div>
+  
+      <div class="footer-section footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://web.facebook.com/" aria-label="Facebook"><img src="image/facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/" aria-label="Instagram"><img src="image/instagram.png" alt="Instagram"></a>
+          <a href="https://www.youtube.com/" aria-label="YouTube"><img src="image/youtube.png" alt="YouTube"></a>
+        </div>
+        <p>Stay connected for daily wellness tips!</p>
+      </div>
+  
     </div>
   
     <div class="footer-bottom">
@@ -119,12 +151,43 @@
   </footer>
   
   <script>
-    function logout() {
-      const confirmed = confirm("Are you sure you want to log out?");
-      if (confirmed) {
-        window.location.href = 'index.html'; 
-      }
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days*24*60*60*1000));
+      expires = "; expires=" + date.toUTCString();
     }
+    document.cookie = name + "=" + encodeURIComponent(value || "") + expires + "; path=/; SameSite=Strict";
+  }
+  
+  function getCookie(name) {
+    let matches = document.cookie.match(new RegExp(
+      "(?:^|; )" + name.replace(/([$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    return matches ? decodeURIComponent(matches[1]) : undefined;
+  }
+  
+  function logout() {
+    setCookie("loggedIn", "false", 7);
+    alert("You have been logged out successfully.");
+    window.location.href = "login.html";
+  }
+  
+  window.onload = function() {
+    var loggedIn = getCookie("loggedIn");
+    var currentUser = getCookie("currentUser");
+  
+    if (loggedIn !== "true") {
+      alert("Please login to access this page.");
+      window.location.href = "login.html";
+      return;
+    }
+  
+    if (currentUser) {
+      document.getElementById("navbarUsername").textContent = currentUser;
+    }
+  };
 
     function submitContact() {
       const name = document.getElementById("name").value;

@@ -8,34 +8,54 @@
 </head>
 <body>
     <header>
-        <h1>Herbalism: Nature's Medicine</h1>
+        <div class="logo-title">
+          <img src="image/logo.png" alt="Logo" class="logo">
+          <h1>Natural Healing</h1>
+        </div>
+      
         <nav>
-            <ul>
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="objectives.html">Objectives</a></li>
-
-                <li class="dropdown">
-                    <a href="#">Therapies ▾</a>
-                    <ul class="dropdown-content">
-                        <li><a href="herbalism.html">Herbalism</a></li>
-                        <li><a href="acupuncture.html">Acupuncture</a></li>
-                        <li><a href="massage.html">Massage</a></li>
-                        <li><a href="meditation.html">Meditation</a></li>
-                        <li><a href="yoga.html">Yoga</a></li>
-                        <li><a href="aromatherapy.html">Aromatherapy</a></li>
-                        <li><a href="nutrition.html">Nutrition</a></li>
-                        <li><a href="detox.html">Detox</a></li>
-                        <li><a href="energy-healing.html">Energy Healing</a></li>
-                        <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
-                    </ul>
-                </li>
-
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Alternative Medicines ▾</a>
+              <ul class="dropdown-content">
+                <li><a href="herbalism.html">Herbalism</a></li>
+                <li><a href="acupuncture.html">Acupuncture</a></li>
+                <li><a href="massage.html">Massage</a></li>
+                <li><a href="meditation.html">Meditation</a></li>
+                <li><a href="yoga.html">Yoga</a></li>
+                <li><a href="aromatherapy.html">Aromatherapy</a></li>
+                <li><a href="homeopathy.html">Homeopathy</a></li>
+                <li><a href="chiropractic.html">Chiropractic</a></li>
+                <li><a href="tai_chi.html">Tai Chi</a></li>
+                <li><a href="ayurveda.html">Ayurveda</a></li>
+                <li><a href="sound_therapy.html">Sound Therapy</a></li>
+                <li><a href="flower_essences.html">Flower Essences</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="detox.html">Detox</a></li>
+                <li><a href="energy-healing.html">Energy Healing</a></li>
+                <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
+              </ul>
+            </li>
+      
+            <li class="contact"><a href="contact.html">Contact</a></li>
+      
+            
+            <li class="dropdown user-dropdown">
+              <a href="#">
+                <img src="image/avatar.png" alt="User Avatar" class="avatar">
+                <span class="username" id="navbarUsername">User</span>▾
+              </a>
+              <ul class="dropdown-content">
+                <li><a href="profile.html">View Profile</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+              </ul>              
+            </li>
+          </ul>
         </nav>
-    </header>
+      </header>
 
     <div class="hero">
         <h2>Deep Dive into Herbal Healing</h2>
@@ -43,7 +63,7 @@
 
     <main>
         <div class="section-content">
-            <img src="Herbalism.png" alt="Herbalism Overview">
+            <img src="image/Herbalism.png" alt="Herbalism Overview">
             <div class="text">
                 <h2>What is Herbalism?</h2>
                 <p>Herbalism is the practice of using plants for medicinal purposes. It is one of the oldest forms of healing and is still widely practiced today. Herbal remedies are made from roots, leaves, bark, flowers, or seeds and can be used to support health and prevent or treat illnesses.</p>
@@ -61,11 +81,11 @@
                     <li>Each plant has unique properties suited to specific conditions.</li>
                 </ul>
             </div>
-            <img src="Herbalism.png" alt="Core Principles of Herbalism">
+            <img src="image/Herbalism1.png" alt="Core Principles of Herbalism">
         </div>
 
         <div class="section-content">
-            <img src="Herbalism.png" alt="Benefits of Herbal Remedies">
+            <img src="image/Herbalism2.png" alt="Benefits of Herbal Remedies">
             <div class="text">
                 <h2>Benefits of Herbal Remedies</h2>
                 <ul>
@@ -80,7 +100,6 @@
         </div>
 
         <div class="section-content">
-
             <div class="text">
                 <h2>How to Use Herbalism in Daily Life</h2>
                 <p>You can incorporate herbs into your daily routine in a variety of ways:</p>
@@ -92,21 +111,118 @@
                     <li><strong>Culinary Uses:</strong> Adding herbs like turmeric, garlic, and basil to meals for flavor and health benefits.</li>
                 </ul>
             </div>
-            <img src="teas.png" alt="Teas" class="image-item">
+            <img src="image/teas.png" alt="Teas" class="image-item">
         </div>
         
 
         <div class="section-content">
-            <img src="teas.png" alt="Teas" class="image-item">
+            <img src="image/Herbalism3.png" alt="Teas" class="image-item">
             <div class="text">
                 <h2>Safety and Guidance</h2>
                 <p>While herbs are natural, they are powerful and must be used responsibly. Consult a qualified herbalist or healthcare provider, especially if you’re pregnant, nursing, or on medication. Always purchase herbs from trusted sources to ensure purity and effectiveness.</p>
             </div>
         </div>
     </main>
-
     <footer>
-        <p>&copy; 2025 Natural Healing Project</p>
+      <div class="footer-container">
+      
+        <div class="footer-logo">
+          <img src="image/logo.png" alt="Logo">
+          <p>Natural Healing</p>
+        </div>
+    
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+    
+        <div class="footer-section">
+          <h4>Alternative Medicines</h4>
+          <div class="therapy-columns">
+            <ul>
+              <li><a href="herbalism.html">Herbalism</a></li>
+              <li><a href="acupuncture.html">Acupuncture</a></li>
+              <li><a href="massage.html">Massage</a></li>
+              <li><a href="meditation.html">Meditation</a></li>
+              <li><a href="yoga.html">Yoga</a></li>
+              <li><a href="aromatherapy.html">Aromatherapy</a></li>
+              <li><a href="homeopathy.html">Homeopathy</a></li>
+              <li><a href="chiropractic.html">Chiropractic</a></li>
+            </ul>
+            <ul>
+              <li><a href="tai_chi.html">Tai Chi</a></li>
+              <li><a href="ayurveda.html">Ayurveda</a></li>
+              <li><a href="sound_therapy.html">Sound Therapy</a></li>
+              <li><a href="flower_essences.html">Flower Essences</a></li>
+              <li><a href="nutrition.html">Nutrition</a></li>
+              <li><a href="detox.html">Detox</a></li>
+              <li><a href="energy-healing.html">Energy Healing</a></li>
+              <li><a href="traditional-medicine.html">Traditional Medicine</a></li>
+            </ul>
+          </div>
+        </div>
+    
+        <div class="footer-section footer-social">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a href="https://web.facebook.com/" aria-label="Facebook"><img src="image/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/" aria-label="Instagram"><img src="image/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/" aria-label="YouTube"><img src="image/youtube.png" alt="YouTube"></a>
+          </div>
+          <p>Stay connected for daily wellness tips!</p>
+        </div>
+    
+      </div>
+    
+      <div class="footer-bottom">
+        <p>&copy; 2025 Natural Healing Project. All rights reserved.</p>
+      </div>
     </footer>
+
+
+    <script>
+      function setCookie(name, value, days) {
+        var expires = "";
+        if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days*24*60*60*1000));
+          expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + encodeURIComponent(value || "") + expires + "; path=/; SameSite=Strict";
+      }
+      
+      function getCookie(name) {
+        let matches = document.cookie.match(new RegExp(
+          "(?:^|; )" + name.replace(/([$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+        ));
+        return matches ? decodeURIComponent(matches[1]) : undefined;
+      }
+      
+      function logout() {
+        setCookie("loggedIn", "false", 7);
+        alert("You have been logged out successfully.");
+        window.location.href = "login.html";
+      }
+      
+      window.onload = function() {
+        var loggedIn = getCookie("loggedIn");
+        var currentUser = getCookie("currentUser");
+      
+        if (loggedIn !== "true") {
+          alert("Please login to access this page.");
+          window.location.href = "login.html";
+          return;
+        }
+      
+        if (currentUser) {
+          document.getElementById("navbarUsername").textContent = currentUser;
+        }
+      };
+      </script>
+      
 </body>
 </html>

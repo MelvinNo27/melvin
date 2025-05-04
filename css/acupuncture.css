@@ -1,0 +1,333 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fdf9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+a {
+    text-decoration: none;
+    color: #2c786c;
+}
+ul {
+    list-style: none;
+  }
+
+  header {
+    background-color: #e3f5ed;
+    padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d0ece3;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+
+header .logo {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #2c786c;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #cceee3;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f3fdf9;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-content li a:hover {
+    background-color: #d1f3e7;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/acupuncture-banner.jpg') center/cover no-repeat;
+    padding: 60px 20px;
+    text-align: center;
+    margin-top: 60px;
+    color: #fff;
+    background-color: #4ba58c;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main Content */
+main {
+    padding: 40px 20px;
+}
+
+.content-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Card Grid for Types of Acupuncture */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Increased minimum width */
+    gap: 30px; /* Increased gap between cards */
+    padding: 40px 0;
+}
+
+.card {
+    background-color: #f0f8f4;
+    border: 1px solid #d0e8dc;
+    border-radius: 16px;
+    padding: 30px; /* Increased padding */
+    text-align: center;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px); /* Slightly more noticeable hover effect */
+}
+
+.card img {
+    width: 220px; 
+    height: 150px; 
+    margin-bottom: 16px;
+    border-radius: 10px;
+}
+
+
+.card h3 {
+    margin-bottom: 12px; /* More space between title and description */
+    font-size: 1.3em; /* Larger font size */
+    color: #2d6a4f;
+}
+
+.card p {
+    font-size: 1.1em; /* Slightly larger text for better readability */
+    color: #555;
+    line-height: 1.5;
+}
+
+
+/* Section Content */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c786c;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+footer {
+    background-color: #e3f5ed;
+    padding: 40px 20px 20px;
+    color: #2d3a3a;
+    font-family: 'Segoe UI', sans-serif;
+    border-top: 2px solid #d0ece3;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #317773;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-section h4 {
+    color: #317773;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    color: #2d3a3a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #317773;
+    text-decoration: underline;
+  }
+  
+  .therapy-columns {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .therapy-columns ul {
+    padding: 0;
+  }
+  
+  .footer-social .social-icons {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+  }
+  
+  .footer-social .social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease, filter 0.3s;
+  }
+  
+  .footer-social .social-icons a:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  .footer-social p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 30px;
+  }
+  
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 1.8em;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-content {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section-content img {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .section-content .text {
+        width: 100%;
+    }
+}

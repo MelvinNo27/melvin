@@ -20,15 +20,21 @@
   ul {
     list-style: none;
   }
-  
-header {
+
+  header {
     background-color: #e3f5ed;
     padding: 10px 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     border-bottom: 2px solid #d0ece3;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
   .logo-title {
@@ -103,6 +109,7 @@ header {
     background-position: center;
     padding: 60px 20px;
     text-align: center;
+    margin-top: 60px;
     color: #fff;
     background-color: #4ba58c;
   }
@@ -146,12 +153,106 @@ header {
   
   footer {
     background-color: #e3f5ed;
-    padding: 30px 20px 10px;
-    color: #333;
-    text-align: center;
-    font-size: 0.9em;
-    margin-top: 40px;
+    padding: 40px 20px 20px;
+    color: #2d3a3a;
+    font-family: 'Segoe UI', sans-serif;
     border-top: 2px solid #d0ece3;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    flex: 1 1 200px;
+    text-align: center;
+  }
+  
+  .footer-logo img {
+    width: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo p {
+    font-weight: bold;
+    font-size: 18px;
+    color: #317773;
+  }
+  
+  .footer-section {
+    flex: 1 1 200px;
+  }
+  
+  .footer-section h4 {
+    color: #317773;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section a {
+    color: #2d3a3a;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section a:hover {
+    color: #317773;
+    text-decoration: underline;
+  }
+  
+  .therapy-columns {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .therapy-columns ul {
+    padding: 0;
+  }
+  
+  .footer-social .social-icons {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+  }
+  
+  .footer-social .social-icons a img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease, filter 0.3s;
+  }
+  
+  .footer-social .social-icons a:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+  }
+  
+  .footer-social p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #555;
+    margin-top: 30px;
   }
   
 
